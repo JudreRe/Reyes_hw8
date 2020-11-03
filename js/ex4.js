@@ -28,7 +28,7 @@ document.querySelector("form").addEventListener("submit", e =>{
     const promotionData =document.createElement("tr");
     promotionData.innerHTML= 
     `
-    Promotion <td>${name}</td>
+    Promotion <td>${promotion}</td>
     `
 
     const location =document.getElementById("location").value;
