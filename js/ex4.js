@@ -3,6 +3,18 @@ document.querySelector("form").addEventListener("submit", e =>{
     
     
 
+    const headerKeys =document.createElement("th");
+    headerKeys.innerHTML=
+    `
+    Keys
+    `
+
+    const headerValue =document.createElement("th")
+    headerValue.innerHTML=
+    `
+    Values
+    `
+
     const name =document.getElementById("name").value;
     const nameData =document.createElement("tr");
     nameData.innerHTML= 
@@ -48,6 +60,8 @@ document.querySelector("form").addEventListener("submit", e =>{
 
     const displayData = document.getElementById("result");
     displayData.innerHTML = "";
+    displayData.appendChild(headerKeys);
+    displayData.appendChild(headerValue);
     displayData.appendChild(nameData);
     displayData.appendChild(emailData);
     displayData.appendChild(paymentData);
