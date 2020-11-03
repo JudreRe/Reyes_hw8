@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <link type="text/css" href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <h2>Sample Form</h2>
+        <form>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required>
+            </p>
+    
+            <p>
+                <label for="payment">Payment Type:</label>
+                <br>
+    
+                <input type="radio" name="payment" value="cash">
+                <label for="cash">Cash</label>
+    
+                <br>
+    
+                <input type="radio" name="payment" value="cc" >
+                <label for="creditcard">Credit Card</label>
+    
+                <br>
+    
+                <input type="radio" name="payment" value="gepay" >
+                <label for="gpay">Google Pay</label>
+    
+                <br>
+    
+                <input type="radio" name="payment" value="apay" >
+                <label for="apay">Apple Pay</label>
+            </p>
+    
+            <p>
+                <input type="checkbox" id="promotion" name="promotion" value="on">
+                <label for="promotion">Sign me up for special promotions</label>
+            </p>
+
+            <p>
+                <label for="location">Preferred Location</label>
+                <select name="location" id="location">
+                    <option value="LA">Los Angeles</option>
+                    <option value="OC">Orange County</option>
+                    <option value="RS">Riverside</option>
+                    <option value="SD">San Diego</option>
+                </select>
+            </p>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </form>
+        
+
+    
+
+    <table id="result">
+        
+    </table>
+
+    <script src="../js/ex4.js"></script>
+</body>
+</html>
