@@ -19,26 +19,22 @@ forms.addEventListener("submit", e => {
       userName.textContent = user.name;
       userName.style.fontSize = "15px";
       userName.innerHTML =
-      `<tr>Name</tr> <td>${user.name}</td>`
+      `Name <td>${user.name}</td>`
+      
 
-     //include the blog if any
+     //include the blog (if any)
       const blog = document.createElement("tr");
       blog.href = user.blog;
       blog.textContent = blog.href;
       blog.innerHTML = 
-      `<tr>Blog</tr> <td>${user.blog}</td>`
+      `Blog <td>${user.blog}</td>`
 
     //add creation date
       const created = document.createElement("tr");
       created.textContent = user.created_at;
       created.style.fontSize = "15px";
       created.innerHTML = 
-      `<tr>Created</tr> <td> ${user.created_at}</td>`
-      
-       
-
-
-
+      `Created <td>${user.created_at}</td>`
 
       //append
       const userProfile = document.getElementById("infos");
@@ -48,9 +44,6 @@ forms.addEventListener("submit", e => {
       userProfile.appendChild(blog);
       userProfile.appendChild(created);
     })
-
-
-
 
     .catch(err => {
       console.error(err.message);
